@@ -10,6 +10,14 @@
     <li><a href="<%= url '/display/00ff00' %>">Green</a></li>
     <li><a href="<%= url '/display/0000ff' %>">Blue</a></li>
   </ul>
+
+	<form><input type="text" id="color" name="color" value="#123456" /></form>
+	 <div id="colorpicker"></div>
+	<script type="text/javascript">
+	   $(document).ready(function() {
+	     $('#colorpicker').farbtastic('#color');
+	   });
+	</script>
 	
 	Colour:
 	<input type="text" id="colour" />
